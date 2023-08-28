@@ -19,8 +19,6 @@ struct Cli {
 fn main() -> Result<()> {
     let args: Cli = Cli::parse();
 
-    println!("{:?}", args);
-
     // カレントディレクトリを取得
     let mut current_dir = env::current_dir()?;
 
